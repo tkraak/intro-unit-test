@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "lint": "standard | snazzy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.22.0",
+    "snazzy": "^7.0.0",
     "standard": "^10.0.3"
   }
 }
