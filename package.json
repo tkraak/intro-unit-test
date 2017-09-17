@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "ava": {
+    "verbose": "true"
+  },
   "scripts": {
     "test": "ava",
     "lint": "standard | snazzy"
