@@ -4,6 +4,8 @@ This repository serves as a gentle introduction to writing JavaScript [unit](htt
 
 The `getAmount()` function and the motivation to refactor it were taken from NodeSchool's [JavaScript Best Practices workshop](https://github.com/excellalabs/js-best-practices-workshopper).
 
+The `orderTotal()` function was taken from the [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q) video series on [Unit Tesing in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeF_zoW9o66wa_UCNE3a7BEr). Thanks @mpj!
+
 ## Getting started
 
 - fork and clone this repo
