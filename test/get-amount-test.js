@@ -38,6 +38,6 @@ test('quarter should return 25', t => {
 test('non-existing object property should throw an error', t => {
   // .throws(function or promise, error)
   // assert that `function` throws an error, or `promise` rejects with an error
-  const error = t.throws(() => { getAmount('x') }, Error)
+  const error = t.throws(() => getAmount('x'), Error)
   t.is(error.message, 'Unrecognized coin x')
 })
