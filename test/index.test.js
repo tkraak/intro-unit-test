@@ -9,7 +9,7 @@ test('both functions are defined', t => {
 
   // print a message contextually alongside the test
   // more useful than console.log
-  t.log('yay, we have a functions!')
+  t.log('yay, we have functions!')
 })
 
 test('penny should return 1', t => {
