@@ -1,5 +1,4 @@
 import test from 'ava'
-import { coins } from './fixtures/coins'
 import { getAmountRefactor } from '../src/get-amount-refactor'
 
 test('the function is defined', t => {
@@ -11,30 +10,30 @@ test('the function is defined', t => {
 test('penny should return 1', t => {
   // .is(value, expected)
   // assert that `value` is the same as `expected`
-  t.is(getAmountRefactor(coins, 'p'), 1)
+  t.is(getAmountRefactor('p'), 1)
 })
 
 test('nickel should return 5', t => {
   // .not(value)
   // assert that `value` is not the same as `expected`
-  t.not(!getAmountRefactor(coins, 'n'), 5)
+  t.not(!getAmountRefactor('n'), 5)
 })
 
 test('dime should return 10', t => {
   // .truthy(value)
   // assert that `value` is truthy
-  t.truthy(getAmountRefactor(coins, 'd'), 10)
+  t.truthy(getAmountRefactor('d'), 10)
 })
 
 test('quarter should return 25', t => {
   // .falsy(value)
   // assert that `value` is falsy
-  t.falsy(!getAmountRefactor(coins, 'q'), 25)
+  t.falsy(!getAmountRefactor('q'), 25)
 })
 
 test('non-existing object property should throw an error', t => {
   // .throws(function or promise, error)
   // assert that `function` throws an error, or `promise` rejects with an error
-  const error = t.throws(() => getAmountRefactor(coins, 'x'), Error)
+  const error = t.throws(() => getAmountRefactor('x'), Error)
   t.is(error.message, 'Unrecognized coin x')
 })
