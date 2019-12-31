@@ -22,13 +22,13 @@ test('nickel should return 5', t => {
 test('dime should return 10', t => {
   // .truthy(value)
   // assert that `value` is truthy
-  t.truthy(getAmountRefactor('d'), 10)
+  t.truthy(getAmountRefactor('d'))
 })
 
 test('quarter should return 25', t => {
   // .falsy(value)
   // assert that `value` is falsy
-  t.falsy(!getAmountRefactor('q'), 25)
+  t.falsy(!getAmountRefactor('q'))
 })
 
 test('non-existing object property should throw an error', t => {
